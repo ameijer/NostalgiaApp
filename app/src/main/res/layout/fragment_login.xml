@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/login_methods_container">
+    <!-- Login view -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:id="@+id/fb_login_container"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+            <com.facebook.login.widget.LoginButton
+                xmlns:fb="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/fb_login_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="30dp"
+                android:paddingLeft="50dp"
+                android:paddingRight="50dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                fb:com_facebook_login_text="Facebook"
+                fb:com_facebook_logout_text="Logout With"
+                style="@style/FacebookLoginButton"/>
+        </LinearLayout>
+
+        <!-- Register view -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:layout_marginTop="24dp">
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/nostalgia_show_register"
+                android:text="Sign Up"
+                android:singleLine="true"
+                android:clickable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:focusable="true"
+                android:soundEffectsEnabled="true"
+                style="@style/EmailLoginButtons"/>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/nostalgia_show_login"
+                android:text="Sign In"
+                android:singleLine="true"
+                android:layout_marginTop="12dp"
+                android:clickable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:focusable="true"
+                android:soundEffectsEnabled="true"
+                style="@style/EmailLoginButtons"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/enter_signup_info"
+        android:layout_height="wrap_content"
+        android:visibility="gone">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/email_input"
+            android:inputType="textEmailAddress"
+            android:textColor="@color/md_white_1000"
+            android:textColorHint="@color/md_white_1000"
+            android:textColorHighlight="@color/md_white_1000"
+            android:hint="email"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/password_input"
+            android:inputType="textPassword"
+            android:textColor="@color/md_white_1000"
+            android:textColorHint="@color/md_white_1000"
+            android:textColorHighlight="@color/md_white_1000"
+            android:hint="password"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/nostalgia_register_button"
+                android:text="Sign Up"
+                android:visibility="gone"
+                style="@style/EmailLoginButtons"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sign In"
+                android:id="@+id/nostalgia_login_button"
+                android:visibility="gone"
+                style="@style/EmailLoginButtons"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:orientation="horizontal">
+            <ImageButton
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:id="@+id/login_back_button"
+                android:scaleType="centerInside"
+                android:src="@drawable/ic_arrow_forward_white_24dp"
+                android:rotation="180"/>
+        </LinearLayout>
+    </LinearLayout>
+    <!-- login view -->
+</LinearLayout>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@+id/loc_frag_holder"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/text_overlay"
+        android:orientation="vertical"
+        android:background="@color/md_grey_800"
+        android:textSize="16dp"
+        android:textColor="@color/md_white_1000"
+        android:paddingLeft="12dp"
+        android:paddingStart="12dp"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="24dp"
+            android:text="Places."
+            android:fontFamily="roboto"
+            android:textColor="@color/md_white_1000"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/locations_intro"
+            android:textSize="16dp"
+            android:textColor="@color/md_white_1000"
+            android:fontFamily="roboto"/>
+        <TextView
+            android:id="@+id/got_it_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="GOT IT"
+            android:background="@color/attention_blue"
+            android:layout_gravity="bottom|center_horizontal"
+            android:textColor="@color/md_white_1000"
+            android:padding="16dp"
+            android:textAlignment="center" />
+    </LinearLayout>
+    <TextView
+        android:id="@+id/next_page_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/md_white_1000"
+        android:text="LET'S GO"
+        android:background="@color/attention_green"
+        android:padding="12dp"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="24dp"
+        android:clickable="true"/>
+</FrameLayout>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:id="@+id/edit_main_information">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="80sp"
+        android:layout_marginBottom="15dp">
+        <!--
+            @layout_marginLeft
+            offset the add person button so main face lies in natural position
+        n-->
+        <LinearLayout
+            android:id="@+id/face_holder"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/my_face"
+                android:scaleType="fitCenter"
+                android:adjustViewBounds="true"
+                android:padding="5sp"
+                android:src="@drawable/mini_aidan"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/view_noncritical_information"
+        android:visibility="gone"
+        android:background="@color/review_background">
+        <com.nostalgia.view.EpochSeeker
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/epoch_seeker"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            app:exampleDimension="24sp"
+            app:exampleColor="#33b5e5"
+            app:exampleString="Nostalgia Timeline"
+            app:display_type="discrete"
+            app:marker_width="10dp"
+            app:x_axis_width="2dp"/>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="oval">
+
+    <gradient android:startColor="#00000000"
+        android:endColor="#000000"
+        android:angle="270" />
+    <size
+        android:width="@dimen/capture_button_diameter"
+        android:height="@dimen/capture_button_diameter"/>
+    <stroke
+        android:color="@color/attention_blue"
+        android:width="4dp"/>
+</shape>

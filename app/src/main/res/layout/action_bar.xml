@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparentblack"
+  >
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+        <ImageButton
+            android:id="@+id/menu"
+            android:layout_width="wrap_content"
+            android:scaleType="fitCenter"
+            android:adjustViewBounds="true"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/menu"
+            android:background="@null"
+            android:layout_height="match_parent"
+            />
+
+    </LinearLayout>
+    <ImageButton
+        android:id="@+id/flip_cam"
+        android:layout_width="wrap_content"
+        android:scaleType="fitCenter"
+        android:adjustViewBounds="true"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/flipcam"
+        android:background="@android:color/white"
+        android:layout_height="match_parent"
+        />
+
+    <Button
+        android:id="@+id/register_fake"
+        android:layout_width="wrap_content"
+        android:adjustViewBounds="true"
+        android:layout_centerInParent="true"
+        android:textSize="15sp"
+        android:text="register fake alex user"
+        android:background="@android:color/white"
+        android:layout_height="match_parent"
+        />
+
+</RelativeLayout>

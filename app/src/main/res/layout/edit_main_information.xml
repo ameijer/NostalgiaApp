@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:id="@+id/edit_main_information">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start|top"
+        android:orientation="vertical"
+        android:background="@drawable/shim_gradient_selector"
+        android:layout_marginTop="48dp">
+        <AutoCompleteTextView
+            android:id="@+id/edit_quick_thought"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:singleLine="true"
+            android:lines="1"
+            android:textSize="@dimen/quick_message_font_size"
+            android:scrollHorizontally="false"
+            android:gravity="start"
+            android:hint="@string/quick_thought_hint"
+            android:textColor="@color/md_white_1000"
+            android:textCursorDrawable="@drawable/text_cursor"
+            android:textColorHint="@color/md_white_1000"
+            android:textColorHighlight="@color/md_white_1000">
+        </AutoCompleteTextView>
+    </LinearLayout>
+    <ImageButton
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:id="@+id/mute_unmute"
+        android:scaleType="fitCenter"
+        android:layout_alignParentRight="true"
+        android:adjustViewBounds="true"
+        android:padding="5sp"
+        android:alpha="0.5"
+        android:background="@android:color/white"
+        android:src="@drawable/volume"
+        android:layout_gravity="end|bottom"/>
+</FrameLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/menu_play_all"
+        android:title="Play All" />
+    <item android:id="@+id/menu_play_new"
+        android:title="Play New" />
+    <item android:id="@+id/menu_manage"
+        android:title="Manage" />
+</menu>

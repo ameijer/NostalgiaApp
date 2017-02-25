@@ -1,0 +1,13 @@
+<android.support.v7.widget.RecyclerView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/recycler_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:divider="#0000FF"
+    android:dividerHeight="2dp"
+    android:scrollbars="none"
+    android:clickable="true"
+    android:focusable="true"
+    android:background="?android:attr/selectableItemBackground"
+    android:focusableInTouchMode="true"
+    ></android.support.v7.widget.RecyclerView>

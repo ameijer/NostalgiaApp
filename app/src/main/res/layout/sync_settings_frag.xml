@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/holo_blue_light"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:text="Sync"
+        android:textSize="25sp"
+        android:layout_marginBottom="10dp"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <LinearLayout
+            android:id="@+id/edit_when_options"
+            android:layout_alignParentLeft="true"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/sync_on"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:scaleType="fitCenter"
+                android:padding="5dp"
+                android:adjustViewBounds="true"
+                android:src="@drawable/sync"
+                android:background="@null"
+
+                style="@style/radio_button_mimic"
+                />
+
+            <ImageButton
+                android:id="@+id/sync_off"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:scaleType="fitCenter"
+                android:padding="5dp"
+                android:adjustViewBounds="true"
+                android:src="@drawable/stop"
+                android:background="@null"
+
+                style="@style/radio_button_mimic"
+                />
+            <ImageButton
+                android:id="@+id/sync_wifi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="fitCenter"
+                android:padding="5dp"
+                android:adjustViewBounds="true"
+                android:src="@drawable/wifi50x50"
+                android:background="@null"
+
+                style="@style/radio_button_mimic"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_alignParentRight="true"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:id="@+id/sync_data_usage_root"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Uploaded: X GB"
+                android:id="@+id/app_tx_bytes"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Downloaded: Y GB"
+                android:id="@+id/app_rx_bytes"/>
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

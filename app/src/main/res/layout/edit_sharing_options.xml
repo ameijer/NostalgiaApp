@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="left">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:text="Sharing Settings"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        android:text="Who"/>
+
+    <LinearLayout
+        android:id="@+id/edit_who_options"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/who_everyone"
+            android:src="@drawable/ic_public_white_48dp"
+            android:background="@null"
+            style="@style/radio_button_mimic"
+            />
+        <ImageButton
+            android:id="@+id/who_friends"
+            android:src="@drawable/ic_people_outline_white_48dp"
+            android:background="@null"
+            style="@style/radio_button_mimic"
+            />
+
+        <ImageButton
+            android:id="@+id/who_private"
+            android:src="@drawable/ic_lock_white_48dp"
+            android:background="@null"
+            style="@style/radio_button_mimic"
+            />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        android:id="@+id/who_desc"
+        android:gravity="start"
+        android:textSize="14sp"
+        android:textAlignment="gravity"
+        />
+
+    <!-- border-bottom -->
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@android:color/white"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+
+        android:textStyle="italic"
+        android:text="When"/>
+
+    <LinearLayout
+        android:id="@+id/edit_when_options"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:orientation="horizontal">
+        <ImageButton
+            android:id="@+id/when_now"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="fitCenter"
+            android:padding="5dp"
+            android:adjustViewBounds="true"
+            android:src="@drawable/ic_done_white_48dp"
+            android:background="@null"
+
+            style="@style/radio_button_mimic"
+            />
+
+        <ImageButton
+            android:id="@+id/when_onehour"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="fitCenter"
+            android:padding="5dp"
+            android:adjustViewBounds="true"
+            android:src="@drawable/ic_access_time_white_48dp"
+            android:background="@null"
+
+            style="@style/radio_button_mimic"
+            />
+
+        <ImageButton
+            android:id="@+id/when_oneday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="fitCenter"
+            android:padding="5dp"
+            android:adjustViewBounds="true"
+            android:src="@drawable/ic_insert_invitation_white_48dp"
+            android:background="@null"
+
+            style="@style/radio_button_mimic"
+            />
+        <ImageButton
+            android:id="@+id/when_wifi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="fitCenter"
+            android:padding="5dp"
+            android:adjustViewBounds="true"
+            android:src="@drawable/wifi50x50"
+            android:background="@null"
+
+            style="@style/radio_button_mimic"
+            />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="start"
+        android:id="@+id/when_desc"
+        android:textColor="@android:color/white"
+        android:textSize="14sp"
+        android:textAlignment="gravity"
+       />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@android:color/white"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        android:text="Where"/>
+
+    <LinearLayout
+        android:id="@+id/where_segment"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:orientation="horizontal">
+        <!--
+        <ImageButton
+            android:id="@+id/where_here_only"
+            android:src="@drawable/righthere50x50"
+            style="@style/radio_button_mimic"
+            />
+        <ImageButton
+            android:id="@+id/where_peek"
+            android:src="@drawable/everywheregeo50x50"
+            style="@style/radio_button_mimic"
+            />
+            -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/review_approval_message"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="start"
+        android:id="@+id/where_desc"
+        android:textColor="@android:color/white"
+        android:layout_marginBottom="20dp"
+        android:textSize="14sp"
+        android:textAlignment="gravity"
+       />
+</LinearLayout>

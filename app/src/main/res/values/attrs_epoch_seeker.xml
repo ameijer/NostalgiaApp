@@ -1,0 +1,15 @@
+<resources>
+    <declare-styleable name="EpochSeeker">
+        <attr name="exampleString" format="string" />
+        <attr name="exampleDimension" format="dimension" />
+        <attr name="exampleColor" format="color" />
+        <attr name="exampleDrawable" format="color|reference" />
+        <attr name="timeline" format="color|reference"/>
+        <attr name="display_type" format="enum">
+            <enum name="discrete" value="0"/>
+            <enum name="continuous" value="1"/>
+        </attr>
+        <attr name="marker_width" format="dimension"/>
+        <attr name="x_axis_width" format="dimension"/>
+    </declare-styleable>
+</resources>

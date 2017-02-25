@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="transparentblack">#88000000</color>
+    <color name="lighttransparentblack">#33000000</color>
+    <color name="attention_blue">#1e85e9</color>
+    <color name="attention_green">#47a60c</color>
+    <color name="pink_accent">#E91E63</color>
+    <color name="location_type_bg_selected">#EE1e85e9</color>
+    <color name="location_type_bg_normal">#88000000</color>
+    <color name="review_background">#AAAAAA</color>
+    <color name="sepia_overlay">#88643B0F</color>
+
+    <!-- Past Meets Present theme -->
+    <color name="pmp_past_500">#BFCDB7</color>
+    <color name="pmp_past_700">#B3E2D0</color>
+    <color name="pmp_middle">#46544E</color>
+    <color name="pmp_present_700">#F2B276</color>
+    <color name="pmp_present_500">#F9C693</color>
+
+    <!-- You'll be There theme -->
+    <color name="ybt_0">#9D9E7E</color>
+    <color name="ybt_1">#B6B9A3</color>
+    <color name="ybt_2">#BFCDB7</color>
+    <color name="ybt_3">#DFE8C6</color>
+    <color name="ybt_4">#FC5F56</color>
+
+    <!-- Lovers in Japan theme -->
+    <color name="lij_pink_500">#E94E77</color>
+    <color name="lij_pink_300">#D68189</color>
+    <color name="lij_pink_100">#C6A49A</color>
+    <color name="lij_blue_300">#C6E5D9</color>
+    <color name="lij_blue_500">@color/md_blue_grey_500</color>
+    <color name="lij_egg_white">#F4EAD5</color>
+
+    <color name="status_bar_color">@color/lij_pink_300</color>
+    <color name="action_bar_color">@color/lij_egg_white</color>
+    <color name="action_bar_text">@color/lij_pink_500</color>
+    <color name="nearby_grid_background_color">@color/lij_egg_white</color>
+    <color name="subscribed_grid_background_color">@color/lij_blue_300</color>
+    <color name="button_top_color">@color/lij_blue_500</color>
+    <color name="button_bottom_color">@color/lij_pink_500</color>
+    <color name="button_bottom_text">@color/md_white_1000</color>
+    <color name="location_grid_header">@color/lij_pink_100</color>
+    <color name="primary_accent_color">@color/attention_blue</color>
+
+    <!-- Floating action buttons -->
+    <color name="fab_primary_color">@color/action_bar_text</color>
+    <color name="fab_ripple_color">@color/attention_blue</color>
+
+    <color name='video_text_overlay'>@color/md_white_1000</color>
+    <color name="map_text_overlay">@color/md_white_1000</color>
+
+    <!--
+        Main capture button
+    -->
+    <color name="capture_progress_ring">@color/lij_pink_300</color>
+    <color name="capture_progress_main">@color/lij_blue_300</color>
+    <color name="capture_progress_complete">@color/lij_pink_500</color>
+    <color name="camera_options_fab">@color/md_blue_grey_200</color>
+
+
+    <color name="tab_background_color">@color/attention_blue</color>
+    <color name="tab_text_color">@color/md_grey_800</color>
+    <color name="tab_selected_indicator_color">@color/action_bar_color</color>
+    <color name="tab_selected_text_color">@color/tab_selected_indicator_color</color>
+
+    <color name="no_color">#00000000</color>
+    <color name="light_grey">#FFd3d3d3</color>
+</resources>

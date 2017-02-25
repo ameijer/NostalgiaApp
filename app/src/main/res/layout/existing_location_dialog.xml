@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/action_bar_color"
+    android:weightSum="100">
+    <GridView
+        android:layout_width="match_parent"
+        android:id="@+id/existing_location_selected_grid"
+        android:layout_height="0dp"
+        android:numColumns="4"
+        android:layout_weight="70"></GridView>
+
+    <Button
+        android:layout_width="match_parent"
+        android:id="@+id/existing_location_submit"
+        android:text="Done"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:background="@android:color/holo_blue_dark"
+        android:layout_height="0dp"
+        android:layout_weight="30"/>
+</LinearLayout>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <ImageView android:id="@+id/screenshot"
+        android:layout_height="70dp"
+        android:src="@drawable/wifi"
+        android:scaleType="fitCenter"
+        android:adjustViewBounds="true"
+        android:layout_width="52px"
+        android:layout_marginLeft="15px"
+        android:background="#efefeb">
+    </ImageView>
+    <LinearLayout android:layout_height="fill_parent"
+        android:id="@+id/linearLayout1"
+        android:layout_width="wrap_content"
+        android:orientation="vertical"
+        android:background="@android:color/white"
+        android:layout_marginRight="0px">
+
+        <TextView
+            android:text="date"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/video_list_date"
+            android:layout_marginLeft="10px"
+            android:textSize="20px"
+            android:gravity="center_vertical"
+            android:textColor="#808080"
+            android:singleLine="true"
+            ></TextView>
+        <TextView
+            android:text="video_id"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/video_id"
+            android:layout_marginLeft="10px"
+            android:textSize="20px"
+            android:gravity="center_vertical"
+            android:textColor="#808080"
+            android:singleLine="true"
+            ></TextView>
+        <TextView
+            android:text="comment"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/video_comment"
+            android:layout_marginLeft="10px"
+            android:textSize="20px"
+            android:gravity="center_vertical"
+            android:textColor="#808080"
+            android:singleLine="true"
+            ></TextView>
+        <TextView
+            android:text="numloads"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/video_loads"
+            android:layout_marginLeft="10px"
+            android:textSize="20px"
+            android:gravity="center_vertical"
+            android:textColor="#808080"
+            android:singleLine="true"
+            ></TextView>
+    </LinearLayout>
+
+</LinearLayout>

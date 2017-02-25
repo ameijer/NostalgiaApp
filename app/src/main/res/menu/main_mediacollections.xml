@@ -1,0 +1,21 @@
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.nostalgia.controller.peek.picker.CollectionsActivity">
+    <item
+        android:title="Capture"
+        android:id="@+id/action_button_capturenow"
+        app:actionLayout="@layout/toolbar_icon_capture"
+        app:showAsAction="always"/>
+    <item
+        android:title="Places"
+        android:id="@+id/action_button_peekpicker"
+        app:actionLayout="@layout/toolbar_icon_peek"
+        app:showAsAction="always"/>
+    <item
+        android:title="Collections"
+        android:id="@+id/action_button_collections"
+        app:actionLayout="@layout/toolbar_icon_highlight_selected"
+        app:showAsAction="always"/>
+</menu>

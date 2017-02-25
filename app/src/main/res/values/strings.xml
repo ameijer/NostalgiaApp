@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?><!-- Copyright (C) 2014 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <!-- The user visible name of the application. [CHAR LIMIT=20] -->
+    <string name="application_name">ClipBored</string>
+
+    <!-- Title shown in splash screen. The parenthesis
+        creates a tail in the chosen font. -->
+    <string name="app_title">Clipbored)</string>
+
+    <string name="enable_background_audio">Play in background</string>
+
+    <string name="start_record_prompt">START RECORDING</string>
+    <string name="stop_record_prompt">STOP RECORDING</string>
+
+    <string name="video">Video</string>
+    <string name="fb_app_id">REDACTED</string>
+    <string name="audio">Audio</string>
+
+    <string name="text">Text</string>
+
+    <string name="next">Next</string>
+
+    <string name="logging_normal">Normal</string>
+
+    <string name="logging_verbose">Verbose</string>
+
+    <string name="retry">Retry</string>
+
+    <string name="off">[off]</string>
+
+    <string name="drm_error_not_supported">Protected content not supported on API levels below 18</string>
+
+    <string name="drm_error_unsupported_scheme">This device does not support the required DRM scheme</string>
+
+    <string name="drm_error_unknown">An unknown DRM error occurred</string>
+
+    <string name="app_name">ClipBored</string>
+    <string name="title_activity_camcorder">Camcorder</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_main">ClipBored</string>
+    <string name="title_activity_storyline_map">Storyline Map</string>
+    <string name="drawer_open">open</string>
+    <string name="drawer_close">close</string>
+
+    <string name="quick_thought_hint">Quick thought, here...</string>
+    <string name="review_approval_message">Do not add to video review</string>
+
+    <string name="profile_picture_desc">Profile picture</string>
+    <string name="welcome">Welcome to Gitkit Demo</string>
+    <string name="sign_in_label">Sign in</string>
+    <string name="manage_account_label">Manage account</string>
+    <string name="sign_out_label">Sign out</string>
+
+    <string name="cancel_video_upload">Pressing delete will permanently delete this video from ClipBored.</string>
+
+    <!-- Introduction Messages -->
+    <string name="hello_intro">Welcome to ClipBored. We know you know how apps work, so we are going to get you started with a personalized account and then set you loose!</string>
+    <string name="collections_intro">Organize and share all your moments with Personal, Invite Only, and Public collections. Here are some defaults to get you started, although you can change them at anytime.</string>
+    <string name="locations_intro">Build a living collage of the places you go. Unlock new places by going to them! Here are a few popular ones to get you started, although videos from most places can only be seen or added to by people who have checked-in there. ClipBored favors the wanderers.</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!--locales-->
+
+    <string-array name="locale_array">
+        <item>us_east</item>
+        <item>us_west</item>
+        <item>zibzorber_9</item>
+        <item>eu_france</item>
+    </string-array>
+    <string name="icon_src_prompt">choose icon source</string>
+    <string name="crash_dialog">reporting error...</string>
+    <string-array name="icon_sources">
+        <item>facebook</item>
+        <item>google</item>
+        <item>files</item>
+        <item>reset default</item>
+    </string-array>
+
+    <string name="search_title">Search Contacts</string>
+</resources>

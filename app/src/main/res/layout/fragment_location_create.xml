@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:id="@+id/location_create_map_frag_holder"
+        android:layout_height="match_parent"
+        android:layout_weight="80"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/location_dialog_holder"
+        android:layout_gravity="bottom|center_horizontal">
+        </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/tutorial_change_size"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@color/transparentblack"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Choose the size of your location with scrollbar, below."
+            android:fontFamily="Roboto"
+            android:textColor="@color/map_text_overlay"
+            android:textSize="18dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:text="GOT IT"
+            android:fontFamily="Roboto"
+            android:textColor="@color/map_text_overlay"
+            android:textSize="24dp"/>
+    </LinearLayout>
+</FrameLayout>

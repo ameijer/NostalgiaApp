@@ -1,0 +1,33 @@
+<android.support.v7.widget.Toolbar
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nostalgia_actionbar"
+    android:layout_height="60dp"
+    android:layout_width="match_parent"
+    android:gravity="center_vertical|start"
+    android:fitsSystemWindows="true"
+    app:titleTextColor="@color/button_bottom_color"
+    app:subtitleTextColor="@color/attention_blue"
+    android:theme="@style/PastMeetsPresentActionBar.Theme"
+    style="@style/PastMeetsPresentActionBar.Style"/>
+
+<!--
+<android.support.v7.widget.Toolbar
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nostalgia_actionbar"
+    android:layout_height="60dp"
+    android:layout_width="match_parent"
+    android:gravity="center_vertical|mStart"
+    android:fitsSystemWindows="true"
+    app:titleTextColor="@color/button_bottom_color"
+    app:subtitleTextColor="@color/attention_blue"
+    android:theme="@style/PastMeetsPresentActionBar.Theme"
+    style="@style/PastMeetsPresentActionBar.Style">
+    <android.support.v7.widget.ActionMenuView
+        android:id="@+id/amvMenu"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp">
+    </android.support.v7.widget.ActionMenuView>
+</android.support.v7.widget.Toolbar>
+-->

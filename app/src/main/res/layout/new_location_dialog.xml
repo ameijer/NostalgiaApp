@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:weightSum="100"
+    android:layout_height="match_parent">
+    <SeekBar
+        android:id="@+id/seekbar_size"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp">
+    </SeekBar>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Place Name"
+        android:id="@+id/create_location_name"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:id="@+id/create_location_submit"
+        android:text="LOOKS GOOD"
+        android:textColor="@color/md_white_1000"
+        android:textStyle="bold"
+        android:background="@color/attention_blue"
+        android:clickable="true"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:soundEffectsEnabled="true"/>
+</LinearLayout>

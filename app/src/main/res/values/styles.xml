@@ -1,0 +1,199 @@
+<resources>
+    <style name="OrangeAppTheme" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:actionBarStyle">@style/OrangeActionBar</item>
+
+        <!-- Support library compatibility -->
+        <item name="actionBarStyle">@style/OrangeActionBar</item>
+        <item name="android:colorAccent">@color/pink_accent</item>
+        <item name="android:statusBarColor">@color/status_bar_color</item>
+    </style>
+
+    <style name="PastMeetsPresentTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:colorPrimary">@color/lij_pink_500</item>
+        <item name="android:textColorPrimary">@color/lij_pink_500</item>
+
+        <!--
+        <item name="android:colorAccent">@color/primary_accent_color</item>
+        -->
+
+        <item name="android:statusBarColor">@color/status_bar_color</item>
+        <item name="android:textViewStyle">@style/RobotoTextViewStyle</item>
+        <item name="android:buttonStyle">@style/RobotoButtonStyle</item>
+        <!-- Support library compatibility -->
+        <item name="actionBarStyle">@style/PastMeetsPresentActionBar.Style</item>
+        <item name="colorPrimary">@color/lij_pink_500</item>
+    </style>
+
+    <!-- ACTION BAR STYLES -->
+    <style name="PastMeetsPresentActionBar.Theme" parent="@style/ThemeOverlay.AppCompat.ActionBar">
+        <item name="android:elevation">2dp</item>
+        <item name="elevation">2dp</item>
+
+        <!--
+        <item name="android:background">@color/md_grey_50</item>
+        -->
+        <!--
+        <item name="android:textColor">@color/action_bar_color</item>
+        <item name="android:textColorPrimary">@color/action_bar_color</item>
+        -->
+
+        <!-- Support library compatibility -->
+        <!--
+        <item name="background">@color/md_grey_50</item>
+        <item name="elevation">4dp</item>
+        -->
+    </style>
+
+    <!-- ACTION BAR STYLES -->
+    <style name="PastMeetsPresentActionBar.Style" parent="@style/Widget.AppCompat.Light.ActionBar.Solid">
+        <!--
+        <item name="android:background">@color/action_bar_color</item>
+        -->
+        <item name="android:textColor">@color/action_bar_text</item>
+        <item name="android:textColorPrimary">@color/action_bar_text</item>
+        <item name="android:elevation">4dp</item>
+        <item name="android:subtitleTextColor">@color/action_bar_text</item>
+        <item name="android:titleTextStyle">@style/PastMeetsPresent.ActionBar.TitleTextStyle</item>
+        <item name="android:subtitleTextStyle">@style/PastMeetsPresent.ActionBar.TitleTextStyle</item>
+
+        <!-- Support library compatibility -->
+        <item name="background">@color/action_bar_color</item>
+        <item name="elevation">4dp</item>
+        <item name="subtitleTextColor">@color/action_bar_text</item>
+    </style>
+
+    <style name="PastMeetsPresent.ActionBar.TitleTextStyle" parent="@android:style/TextAppearance">
+        <item name="android:textColor">@color/action_bar_text</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="RobotoTextViewStyle" parent="android:Widget.TextView">
+        <item name="android:fontFamily">sans-serif-light</item>
+    </style>
+
+    <style name="RobotoButtonStyle" parent="android:Widget.Holo.Button">
+        <item name="android:fontFamily">sans-serif-light</item>
+    </style>
+
+    <!-- Application theme. -->
+    <style name="PurpleAppTheme" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:actionBarStyle">@style/PurpleActionBar</item>
+        <item name="android:colorAccent">@color/pink_accent</item>
+        <item name="android:colorPrimaryDark">@color/md_pink_900</item>
+        <!--
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowActionBarOverlay">true</item>
+        -->
+
+        <!-- Support library compatibility -->
+        <item name="actionBarStyle">@style/PurpleActionBar</item>
+        <!--<item name="windowActionBarOverlay">true</item>-->
+    </style>
+    <!-- ACTION BAR STYLES -->
+    <style name="PurpleActionBar" parent="@style/Widget.AppCompat.ActionBar">
+        <item name="android:background">@color/md_deep_purple_500</item>
+        <item name="android:elevation">4dp</item>
+        <!-- Support library compatibility -->
+        <item name="background">@color/md_deep_purple_500</item>
+        <item name="elevation">4dp</item>
+    </style>
+
+    <style name="OrangeActionBar" parent="@style/Widget.AppCompat.ActionBar">
+        <item name="android:background">@color/md_deep_orange_500</item>
+        <item name="android:elevation">4dp</item>
+        <!-- Support library compatibility -->
+        <item name="background">@color/md_deep_orange_500</item>
+        <item name="elevation">4dp</item>
+    </style>
+
+    <style name="RootTheme" parent="android:Theme.Holo">
+    </style>
+
+    <style name="PlayerTheme" parent="@style/RootTheme">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@android:color/black</item>
+    </style>
+
+    <style name="DemoButton">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:minWidth">40dp</item>
+    </style>
+    <style name="location_type_selector">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:button">@null</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/location_type_selector</item>
+    </style>
+    <style name="location_type_end_L">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:button">@null</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/location_type_selector</item>
+    </style>
+    <style name="location_type_selector_end_R">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:button">@null</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/location_type_selector</item>
+    </style>
+    <style name="radio_button_mimic">
+        <item name="android:scaleType">centerInside</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:paddingLeft">5dp</item>
+        <item name="android:paddingRight">5dp</item>
+        <item name="android:background">@color/transparentblack</item>
+    </style>
+
+    <style name="Widget.Button.Toggle" parent="android:Widget">
+        <item name="android:background">@drawable/ic_toggle_bg</item>
+        <item name="android:disabledAlpha">?android:attr/disabledAlpha</item>
+    </style>
+
+    <style name="toggleButton" parent="android:Theme.Black">
+        <item name="android:buttonStyleToggle">@style/Widget.Button.Toggle</item>
+        <item name="android:textOn"></item>
+        <item name="android:textOff"></item>
+    </style>
+
+    <style name="FacebookLoginButton">
+        <item name="android:textSize">20sp</item>
+        <item name="android:layout_marginTop">50dp</item>
+        <item name="android:layout_marginBottom">50dp</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+    </style>
+    <style name="EmailLoginButtons">
+        <item name="android:background">@drawable/round_login_button</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:minWidth">100dp</item>
+        <item name="android:paddingLeft">18dp</item>
+        <item name="android:paddingRight">18dp</item>
+        <item name="android:textColor">@color/md_white_1000</item>
+    </style>
+    <style name="LocationGridHeader">
+        <item name="android:textSize">18sp</item>
+        <item name="android:fontFamily">@string/define_font_googlematerial</item>
+        <item name="android:textColor">@color/location_grid_header</item>
+    </style>
+    <style name="DateTimeMessage">
+        <item name="android:layout_gravity">top|start</item>
+        <item name="android:fontFamily">@string/define_font_fontawesome</item>
+        <item name="android:textSize">@dimen/date_time_font_size</item>
+    </style>
+
+    <!-- Widget styling -->
+    <style name="Widget" />
+
+    <style name="Widget.SampleOutput">
+        <item name="android:padding">12dp</item>
+        <item name="android:textAppearance">?android:textAppearanceMedium</item>
+        <item name="android:lineSpacingMultiplier">1.1</item>
+    </style>
+</resources>

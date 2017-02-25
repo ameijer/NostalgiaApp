@@ -1,0 +1,50 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.nostalgia.controller.introduction.HelloFragment">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/title_holder"
+        android:orientation="vertical"
+        android:layout_marginTop="120dp"
+        android:layout_gravity="center_horizontal"
+        android:visibility="gone"
+        >
+        <com.nostalgia.view.AutoResizeTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/title_view"
+            android:fontFamily="sans-serif-light"
+            android:gravity="center|top"
+            android:textStyle="bold"
+            android:textSize="100sp"
+            android:text="@string/app_title"
+            android:textColor="@android:color/white"
+            android:singleLine="true"
+            android:visibility="invisible"
+            android:paddingStart="16dp"
+            android:paddingLeft="16dp"
+            android:paddingEnd="16dp"
+            android:paddingRight="16dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/hello_intro"
+            android:textColor="@color/attention_green"
+            android:textSize="12dp"
+            android:layout_gravity="center_horizontal"/>
+        <TextView
+            android:id="@+id/got_it_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/md_white_1000"
+            android:text="LET'S GO"
+            android:background="@color/attention_blue"
+            android:padding="12dp"
+            android:layout_gravity="center_horizontal"/>
+    </LinearLayout>
+    <!-- TODO: Update blank fragment layout -->
+</FrameLayout>

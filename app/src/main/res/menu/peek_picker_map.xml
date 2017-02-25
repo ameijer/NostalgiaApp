@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!-- "Mark Favorite", should appear as action button if possible -->
+    <item
+        android:title="Now"
+        android:icon="@drawable/ic_camera_pink_48px"
+        android:id="@+id/action_button_capturenow"
+        android:checkable="true"
+        android:checked="false"
+        app:showAsAction="always|withText"/>
+    <item
+        android:title="There"
+        android:icon="@drawable/peek"
+        android:id="@+id/action_button_peekpicker"
+        android:checkable="true"
+        android:checked="true"
+
+        app:showAsAction="always|withText"/>
+</menu>

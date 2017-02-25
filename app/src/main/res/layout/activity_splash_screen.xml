@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <com.davemorrissey.labs.subscaleview.SubsamplingScaleImageView
+        android:id="@+id/background_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/title_holder"
+        android:orientation="vertical"
+        android:layout_marginTop="120dp"
+        android:layout_gravity="center_horizontal"
+        android:visibility="gone"
+        >
+        <com.nostalgia.view.AutoResizeTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/title_view"
+            android:fontFamily="sans-serif-light"
+            android:gravity="center|top"
+            android:textStyle="bold"
+            android:textSize="100sp"
+            android:text="@string/app_title"
+            android:textColor="@android:color/white"
+            android:singleLine="true"
+            android:visibility="invisible"
+            android:paddingStart="16dp"
+            android:paddingLeft="16dp"
+            android:paddingEnd="16dp"
+            android:paddingRight="16dp"/>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/elephant_2"
+        android:layout_gravity="center_horizontal|bottom"
+        android:layout_marginBottom="12dp"
+        android:id="@+id/title_icon"
+        android:visibility="gone"/>
+    <LinearLayout android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:padding="50dp"
+        android:orientation="vertical"
+        android:layout_gravity="center_horizontal|bottom"
+        android:id="@+id/login_fragment"
+        android:background="@color/transparentblack"
+        android:visibility="gone">
+    </LinearLayout>
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        android:id="@+id/progress_view"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:src="@drawable/ic_explore_white_48dp"
+            android:layout_gravity="bottom|center_horizontal"
+            android:id="@+id/progress_icon"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Securing Account"
+            android:fontFamily="roboto"
+            android:textColor="@color/md_white_1000"
+            android:textSize="16dp"/>
+    </LinearLayout>
+</FrameLayout>

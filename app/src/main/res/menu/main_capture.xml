@@ -1,0 +1,12 @@
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.nostalgia.controller.capturemoment.MainCaptureActivity">
+
+    <item
+        android:title="There"
+        android:id="@+id/action_button_videos"
+        app:actionLayout="@layout/toolbar_icon_videos"
+        app:showAsAction="always"/>
+</menu>

@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.vuescape.nostalgia">
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="ANDROID.PERMISSION.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="ANDROID.PERMISSION.WRITE_EXTERNAL_STORAGE" />
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+<!--         Google Identity Toolkit: -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <!-- End Google Identity Toolkit -->
+
+    <permission android:name="com.example.android.permission.MAPS_RECEIVE" android:protectionLevel="signature"/>
+    <uses-permission android:name="com.example.android.permission.MAPS_RECEIVE"/>
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <!-- Allows access to the flashlight -->
+    <permission
+        android:name="android.permission.FLASHLIGHT"
+        android:permissionGroup="android.permission-group.HARDWARE_CONTROLS"
+        android:protectionLevel="normal" />
+
+    <application
+        android:name="com.nostalgia.Nostalgia"
+        android:allowBackup="true"
+    tools:replace="android:label"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:theme="@style/PastMeetsPresentTheme">
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/fb_app_id" />
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity
+            android:name="com.nostalgia.controller.SplashActivity"
+            android:label="@string/application_name"
+            android:noHistory="true"
+            android:hardwareAccelerated="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <meta-data
+            android:name="identitytoolkit.show_providers"
+            android:value="Google,Facebook" />
+        <meta-data
+            android:name="identitytoolkit.use_google_plus"
+            android:value="false" />
+        <meta-data
+            android:name="identitytoolkit.api_key"
+            android:value="REDACTED />
+
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+            android:name="com.nostalgia.controller.capturemoment.MainCaptureActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="userPortrait">
+        </activity>
+        <activity
+            android:name="com.nostalgia.controller.login.BlockingLoginActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.nostalgia.controller.peek.activity.AreaPeekActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <meta-data
+            android:name="identitytoolkit.server_client_id"
+            android:value="<REDACTED>" />
+        <meta-data
+            android:name="identitytoolkit.server_widget_url"
+            android:value="https://localhost" />
+
+        <service
+            android:name="com.nostalgia.service.LocationUpdaterService"
+            android:exported="false" />
+        <service
+            android:name="com.nostalgia.service.SyncService"
+            android:exported="false" />
+        <service
+            android:name="com.nostalgia.service.StreamingAuthenticationService"
+            android:exported="false" />
+        <service
+            android:name="com.nostalgia.service.NetworkConnectivityService"
+            android:exported="false" />
+        <service
+            android:name="com.nostalgia.service.VideoUploadService"
+            android:exported="false" />
+        <activity
+            android:name="com.nostalgia.controller.capturemoment.review.MediaReviewerPagerActivity"
+            android:hardwareAccelerated="true"
+            android:label="@string/application_name"
+            android:parentActivityName="com.nostalgia.controller.capturemoment.MainCaptureActivity"
+            android:windowSoftInputMode="stateUnchanged"
+            android:launchMode="singleTop"
+            >
+
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.nostalgia.controller.capturemoment.MainCaptureActivity" />
+        </activity>
+
+        <activity android:name="com.nostalgia.controller.capturemoment.review.places.LocationCreationActivity"
+            android:configChanges="keyboardHidden"
+            android:label="@string/application_name"
+            android:parentActivityName="com.nostalgia.controller.capturemoment.review.MediaReviewerPagerActivity"
+            android:windowSoftInputMode="stateUnchanged">
+
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.nostalgia.controller.capturemoment.review.MediaReviewerPagerActivity" />
+            >
+        </activity>
+
+        <activity android:name="com.nostalgia.controller.creator.CollectionCreatorActivity"
+            android:configChanges="keyboardHidden"
+            android:label="@string/application_name"
+            android:windowSoftInputMode="stateUnchanged">
+            >
+        </activity>
+
+        <activity
+            android:name="com.nostalgia.controller.introduction.IntroductionActivity"
+            android:configChanges="keyboardHidden"
+            android:label="@string/application_name" >
+        </activity>
+        <activity
+            android:name="com.nostalgia.controller.peek.picker.LocationsActivity"
+            android:configChanges="keyboardHidden"
+            android:label="@string/application_name" >
+        </activity>
+        <activity
+            android:name="com.nostalgia.controller.peek.picker.CollectionsActivity"
+            android:configChanges="keyboardHidden"
+            android:label="@string/application_name" >
+        </activity>
+        <activity
+            android:name="com.nostalgia.menu.settings.SettingsActivity"
+            android:label="@string/application_name" >
+        </activity>
+        <activity
+            android:name="com.nostalgia.menu.friends.FriendsActivity"
+            android:label="@string/application_name"
+            android:parentActivityName="com.nostalgia.controller.capturemoment.MainCaptureActivity"
+            android:windowSoftInputMode="stateUnchanged"
+            android:launchMode="singleTop"
+            >
+
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@xml/searchable" />
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+            </intent-filter>
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.nostalgia.controller.capturemoment.MainCaptureActivity" />>
+        </activity>
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name="com.nostalgia.controller.peek.playback.ViewerActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:label="@string/application_name"
+            android:launchMode="singleInstance">
+
+            <intent-filter>
+                <action android:name="com.google.android.exoplayer.demo.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:scheme="http" />
+                <data android:scheme="https" />
+                <data android:scheme="content" />
+                <data android:scheme="asset" />
+                <data android:scheme="file" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
